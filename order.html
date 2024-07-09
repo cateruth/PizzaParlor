@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Caitlin Gerard
+        Date: 07/06/2024
+        Assignment Name: Cheech's Flexible Pizza Parlor
+        Filename: order.html
+         -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="pizza, Italian, fast food">
+    <script src="https://kit.fontawesome.com/ef291055c9.js" crossorigin="anonymous"></script>
+    <title>Cheech's Flexible Pizza Parlor | Order</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="header-center">
+            HOME
+            <a class="active" href="order.html">ORDER ONLINE</a>
+            <a href="menu.html">MENU</a>
+            OUR LOCATION
+        </div>
+    </header>
+    <div class="name">
+        <h1>Cheech's</h1>
+    </div>
+    <div class="flex-container">
+        <section id="left">
+            <form method="get" action="thankyou.html">
+                <div>
+                    <fieldset id="customerInfo">
+                        <legend>Customer Info</legend>
+                        <label for="fname">
+                            First Name:
+                            <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+                        </label>
+                        <br>
+                        <label for="lname">
+                            Last Name:
+                            <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+                        </label>
+                        <br>
+                        <label for="phone">
+                            Phone:
+                            <input type="tel" name="phone" id="phone" required placeholder="Phone" />
+                        </label>
+                        <br>
+                        <label for="pizzaType">Pizza:</label>
+                        <select name="pizzaSelection" id="pizzaType">
+                            <option value="cheese">Cheese</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="veggie">Veggie</option>
+                            <option value="supreme">Supreme</option>
+                            <option value="margherita">Margherita</option>
+                            <option value="bbq">BBQ Chicken</option>
+                        </select>
+                        <br>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10">
+                        <br>
+                        <input class="submit" type="submit" value="Submit" />
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+        <div>
+        </div>
+        <section id="right">
+            <br>
+            <div class="quote">❝</div>
+            <blockquote>Cheech's pizza is the best I've ever had!</blockquote>
+            <h2>- Jane Smith</h2>
+            <br>
+            <div class="socialMedia">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <span class="simple-icons--grubhub"></span>
+                <span class="simple-icons--ubereats"></span>
+                <span class="simple-icons--doordash"></span>
+
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        &copy; Gerard Designs
+    </footer>
+</body>
+
+</html>

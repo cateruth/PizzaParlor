@@ -1,0 +1,259 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+
+/* 
+        Author: Caitlin Gerard
+        Date: 07/06/2024
+        Assignment Name: Cheech's Flexible Pizza Parlor
+        Filename: style.css
+*/
+body {
+    background-image: url("background.jpg"), url("bricks.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+}
+
+.header-center {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 40px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    place-content: center center;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 0px 0px 30px white;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+a:active {
+    color: white;
+}
+
+
+input[type=submit] {
+    float: right;
+}
+
+section#pizza1,
+section#pizza2,
+section#left,
+section#right {
+    -webkit-flex: 8 1 300px;
+    flex: 8 1 300px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#left {
+    margin-left: 20px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+section#right {
+    margin-right: 20px;
+    font-family: "Miniver", "Brush Script MT", serif;
+}
+
+h2 {
+    text-align: right;
+    font-size: medium;
+}
+
+h3 {
+    text-align: center;
+    font-size: 50px;
+    line-height: .5;
+    font-family: "Miniver", "Brush Script MT", serif;
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Miniver", "Brush Script MT", serif;
+    line-height: .5;
+}
+
+.cheese,
+.pepperoni,
+.veggie,
+.supreme,
+.margherita,
+.bbq {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    place-content: center;
+}
+
+blockquote {
+    font-size: 20px;
+}
+
+fieldset#customerInfo {
+    line-height: 2;
+}
+
+.quote {
+    font-size: 50px;
+    line-height: 0.1;
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+img {
+    width: 300px;
+}
+
+.name {
+    color: white;
+    font-size: 40px;
+    line-height: .2;
+    text-align: center;
+    font-family: "Miniver", "Brush Script MT", serif;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
+}
+.container {
+    background-color: white;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    font-family: "Miniver", "Brush Script MT", serif;
+}
+
+.simple-icons--doordash {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M23.071 8.409a6.09 6.09 0 0 0-5.396-3.228H.584A.589.589 0 0 0 .17 6.184L3.894 9.93a1.75 1.75 0 0 0 1.242.516h12.049a1.554 1.554 0 1 1 .031 3.108H8.91a.589.589 0 0 0-.415 1.003l3.725 3.747a1.75 1.75 0 0 0 1.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.simple-icons--ubereats {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M0 2.865v4.997c0 1.883 1.332 3.13 3.084 3.13a2.97 2.97 0 0 0 2.15-.877v.743h1.211V2.864H5.223v4.934c0 1.265-.87 2.12-1.995 2.122c-1.139-.002-1.997-.834-1.997-2.122V2.865zm7.363 0v7.993h1.162v-.732a3 3 0 0 0 2.118.876a3.044 3.044 0 1 0 0-6.086a2.97 2.97 0 0 0-2.107.876V2.865zm9.885 2.056a3.02 3.02 0 0 0-3.035 3.024c0 1.737 1.373 3.037 3.153 3.037a3.12 3.12 0 0 0 2.558-1.243l-.85-.618a2.05 2.05 0 0 1-1.708.858a1.97 1.97 0 0 1-1.97-1.655h4.817v-.379c0-1.734-1.254-3.024-2.964-3.024zm6.163.066a1.6 1.6 0 0 0-1.376.766v-.719h-1.163v5.824h1.174V7.546c0-.902.559-1.484 1.327-1.484h.495V4.989zm-6.203.944a1.844 1.844 0 0 1 1.834 1.486h-3.618a1.844 1.844 0 0 1 1.784-1.486m-6.659.006a2.021 2.021 0 1 1 .002 4.042a2.02 2.02 0 0 1-1.416-.598a2.02 2.02 0 0 1-.585-1.422a2.02 2.02 0 0 1 .584-1.422a2.02 2.02 0 0 1 1.415-.6M0 12.987v7.971h5.722v-1.367H1.546v-1.97H5.61v-1.315H1.545v-1.955h4.176v-1.365zm14.56.41v1.685h-1.15v1.338h1.154v3.143c0 .793.572 1.421 1.6 1.421h1.643l-.006-1.338H16.66c-.348 0-.572-.15-.572-.464v-2.768H17.8v-1.332h-1.706v-1.686zm-5.297 1.527a3.103 3.103 0 1 0 .07 6.205a3 3 0 0 0 1.913-.666v.532h1.517v-5.913h-1.509v.526a3 3 0 0 0-1.92-.684zm11.771.007c-1.585 0-2.7.644-2.7 1.886c0 .86.613 1.421 1.936 1.695l1.448.328c.57.11.722.259.722.49c0 .371-.438.603-1.127.603c-.876 0-1.378-.19-1.573-.848h-1.533c.22 1.231 1.157 2.05 3.049 2.05h.002c1.752 0 2.742-.819 2.742-1.953c0-.806-.585-1.408-1.809-1.667l-1.294-.26c-.751-.136-.988-.274-.988-.546c0-.357.361-.575 1.03-.575c.722 0 1.252.192 1.405.847h1.518c-.086-1.229-.99-2.05-2.827-2.05m-11.567 1.25c1.01.01 1.819.837 1.807 1.847A1.8 1.8 0 0 1 9.45 19.83a1.824 1.824 0 0 1 .018-3.648'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.simple-icons--grubhub {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16.708 9.556h-.84c-.048 0-.072.048-.072.072v1.828h-.84V9.628c0-.048-.048-.072-.072-.072h-.84c-.048 0-.072.048-.072.072v4.692c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072v-1.876h.84v1.876c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072V9.628c0-.024-.024-.072-.072-.072m-7.08 0h-.84q-.072 0-.072.072v3.324a.6.6 0 0 1-.12.384c-.072.096-.168.12-.288.12a.4.4 0 0 1-.288-.12a.6.6 0 0 1-.12-.384V9.628c0-.048-.048-.072-.072-.072h-.84q-.072 0-.072.072v3.348c0 .432.096.84.36 1.108c.264.264.624.408 1.036.408c.432 0 .796-.144 1.036-.408c.264-.264.36-.648.36-1.108V9.628c-.004-.024-.028-.072-.08-.072m-8.232-.072c-.432 0-.796.144-1.036.408C.096 10.156 0 10.54 0 11v2c0 .432.096.84.36 1.108c.264.264.624.408 1.036.408c.432 0 .796-.144 1.036-.408c.264-.264.36-.648.36-1.108v-1.104a.1.1 0 0 0-.096-.096H1.468a.1.1 0 0 0-.096.096v.82c0 .048.048.096.096.096h.316v.192a.68.68 0 0 1-.12.408c-.072.096-.168.12-.288.12a.4.4 0 0 1-.288-.12a.7.7 0 0 1-.12-.408v-1.976c0-.168.048-.316.12-.408c.072-.096.168-.12.288-.12c.116 0 .216.048.288.12c.072.096.12.24.12.408v.192c0 .048.048.072.072.072h.84q.072 0 .072-.072v-.192c0-.432-.096-.84-.36-1.108c-.216-.292-.604-.436-1.012-.436m10.832 3.828c-.072.096-.168.12-.316.12h-.48v-1.016h.48c.12 0 .216.048.288.12c.079.104.121.23.12.36c.008.2-.016.316-.092.416m-.364-2.768c.12 0 .216.024.288.12c.072.072.096.192.096.34s-.024.264-.096.36a.4.4 0 0 1-.264.12h-.432v-.94zm.964 1.372c.144-.144.408-.48.408-.916c0-.508-.192-.82-.34-.988c-.264-.288-.624-.432-1.036-.432h-1.316c-.048 0-.072.048-.072.072v4.696c0 .048.048.072.072.072h1.396c.432 0 .84-.168 1.108-.508c.144-.192.316-.508.316-.988c-.028-.576-.388-.916-.536-1.008m-7.652-.46c-.072.096-.192.144-.34.144h-.408v-1.056h.408c.144 0 .264.048.34.144c.096.096.12.216.12.384s-.02.288-.12.384m.532.868c.096-.072.168-.12.24-.216c.168-.192.384-.532.384-1.06c0-.508-.192-.84-.384-1.036c-.24-.288-.6-.432-1.012-.456H3.54c-.048 0-.072.048-.072.072v4.692c0 .048.048.072.072.072h.84c.048 0 .072-.048.072-.072v-1.736h.288l.532 1.78c0 .024.048.048.072.048h.888c.024 0 .048-.024.072-.024s.024-.048.024-.072zm17.136.988c-.072.096-.168.12-.316.12h-.48v-1.016h.48c.12 0 .216.048.288.12c.079.104.121.23.12.36c.028.2-.016.316-.092.416m-.34-2.768c.12 0 .216.024.288.12c.072.072.096.192.096.34s-.024.264-.096.36a.4.4 0 0 1-.264.12h-.432v-.94zm.964 1.372c.144-.144.408-.48.408-.916c0-.508-.192-.82-.34-.988c-.264-.288-.624-.432-1.036-.432h-1.328c-.048 0-.072.048-.072.072v4.696c0 .048.048.072.072.072h1.404c.432 0 .84-.168 1.108-.508c.144-.192.316-.508.316-.988a1.44 1.44 0 0 0-.532-1.008m-3.224-2.36h-.84q-.072 0-.072.072v3.324a.6.6 0 0 1-.12.384c-.072.096-.168.12-.288.12a.4.4 0 0 1-.288-.12a.6.6 0 0 1-.12-.384V9.628c0-.048-.048-.072-.072-.072H17.6q-.072 0-.072.072v3.348c0 .432.096.84.36 1.108c.264.264.624.408 1.036.408c.432 0 .796-.144 1.036-.408c.264-.264.36-.648.36-1.108V9.628c.024-.024-.024-.072-.076-.072'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.socialMedia {
+    font-size: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 568px) {
+    body {
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: column nowrap;
+        background-size: 568px;
+    }
+
+    .flex-container,
+    .flex-container2 {
+        width: 320px;
+        margin-top: 150px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background-color: white;
+    }
+    fieldset#customerInfo {
+        margin-right: 20px;
+    }
+    section#right {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 569px) {
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        background-color: white;
+        margin: 300px auto;
+        width: 700px;
+        height: 300px;
+        gap: 10px;
+    }
+
+    .flex-container2 {
+        display: -webkit-flex;
+        display: flex;
+        margin: 300px auto;
+        -webkit-flow-flow: column wrap;
+        flex-flow: column wrap;
+        background-color: white;
+        width: 700px;
+        height: 1070px;
+    }
+    .name {
+        margin-top: -15px;
+    }
+    body {
+        background-size: 700px, 100%;
+    }
+
+    
+}
